@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* 🌌 Animated Gradient Background */
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg,#020617,#0f172a,#1e3a8a,#020617);
+    background-size: 400% 400%;
+    animation: bg 12s ease infinite;
+    z-index: -2;
+}
+
+@keyframes bg {
+    0% {background-position:0%}
+    50% {background-position:100%}
+    100% {background-position:0%}
+}
+
+/* ✨ Glow Cursor Effect */
+body::after {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(56,189,248,0.3), transparent 60%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    top: var(--y);
+    left: var(--x);
+    z-index: -1;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero span {
+    color: #38bdf8;
+    text-shadow: 0 0 15px #38bdf8;
+}
+
+.typing {
+    color: cyan;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* SOCIAL ICONS */
+.socials img {
+    margin: 15px;
+    transition: 0.3s;
+    filter: brightness(0.8);
+}
+
+.socials img:hover {
+    transform: scale(1.3) rotate(5deg);
+    filter: brightness(1.5);
+}
+
+/* TOOLS */
+.tools {
+    text-align: center;
+    padding: 50px;
+}
+
+.icons img {
+    height: 45px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+/* CONTENT CARDS */
+.content {
+    padding: 40px;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    margin: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(56,189,248,0.3);
+}
+
+/* 🔥 BUTTON */
+.wa-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg,#25D366,#128C7E);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.wa-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #25D366;
+}
+
+/* 🚀 Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    background: #020617;
+    color: #aaa;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-left h3 {
+    color: #38bdf8;
+}
+
+.footer-links,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer a {
+    color: #aaa;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #0f172a;
+    font-size: 14px;
+}
