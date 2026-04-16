@@ -44,7 +44,7 @@ This project showcases my skills, projects, and journey as a web developer.
 
 📬 Contact Me
 
-- WhatsApp: https://wa.me/91+9977583132
+- WhatsApp: https://wa.me/91+ 9977583132
 - GitHub: https://github.com/chdurgeshrao2011-ops
 
 ---
